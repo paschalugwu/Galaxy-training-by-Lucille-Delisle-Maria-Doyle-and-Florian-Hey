@@ -1,0 +1,144 @@
+This is cutadapt 4.0 with Python 3.9.12
+Command line parameters: -j=1 -a Nextera R1=CTGTCTCTTATACACATCTCCGAGCCCACGAGAC -A Nextera R2=CTGTCTCTTATACACATCTGACGCTGCCGACGA --output=out1.fq.gz --paired-output=out2.fq.gz --error-rate=0.1 --times=1 --overlap=3 --action=trim --minimum-length=20 --pair-filter=any --quality-cutoff=20 SRR891268_chr22_enriched_R1_fastq_gz.fq.gz SRR891268_chr22_enriched_R2_fastq_gz.fq.gz
+Processing paired-end reads on 1 core ...
+Finished in 8.15 s (29 µs/read; 2.10 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            285,247
+  Read 1 with adapter:                  41,380 (14.5%)
+  Read 2 with adapter:                  40,967 (14.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:               2,092 (0.7%)
+Pairs written (passing filters):       283,155 (99.3%)
+
+Total basepairs processed:    28,524,700 bp
+  Read 1:    14,262,350 bp
+  Read 2:    14,262,350 bp
+Quality-trimmed:                 209,648 bp (0.7%)
+  Read 1:        51,492 bp
+  Read 2:       158,156 bp
+Total written (filtered):     27,510,952 bp (96.4%)
+  Read 1:    13,773,578 bp
+  Read 2:    13,737,374 bp
+
+=== First read: Adapter Nextera R1 ===
+
+Sequence: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC; Type: regular 3'; Length: 34; Trimmed: 41380 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-34 bp: 3
+
+Bases preceding removed adapters:
+  A: 11.6%
+  C: 41.3%
+  G: 25.9%
+  T: 20.3%
+  none/other: 0.9%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	7029	4457.0	0	7029
+4	3667	1114.2	0	3667
+5	3143	278.6	0	3143
+6	2922	69.6	0	2922
+7	3201	17.4	0	3201
+8	3502	4.4	0	3502
+9	3558	1.1	0	3530 28
+10	3030	0.3	1	2995 35
+11	2461	0.1	1	2436 25
+12	1848	0.0	1	1831 17
+13	1626	0.0	1	1613 13
+14	1397	0.0	1	1385 12
+15	864	0.0	1	858 6
+16	492	0.0	1	487 5
+17	280	0.0	1	271 9
+18	272	0.0	1	269 3
+19	234	0.0	1	230 4
+20	253	0.0	2	245 8
+21	315	0.0	2	309 5 1
+22	290	0.0	2	287 3
+23	264	0.0	2	257 7
+24	308	0.0	2	298 9 1
+25	22	0.0	2	21 0 1
+26	4	0.0	2	4
+27	4	0.0	2	4
+28	2	0.0	2	2
+29	8	0.0	2	8
+30	2	0.0	3	2
+31	1	0.0	3	1
+32	1	0.0	3	1
+38	2	0.0	3	2
+39	2	0.0	3	2
+40	3	0.0	3	2 1
+41	3	0.0	3	3
+42	6	0.0	3	4 2
+43	8	0.0	3	7 1
+44	4	0.0	3	4
+45	1	0.0	3	1
+46	1	0.0	3	1
+47	7	0.0	3	6 1
+48	3	0.0	3	2 1
+49	4	0.0	3	3 1
+50	336	0.0	3	301 31 3 1
+
+
+=== Second read: Adapter Nextera R2 ===
+
+Sequence: CTGTCTCTTATACACATCTGACGCTGCCGACGA; Type: regular 3'; Length: 33; Trimmed: 40967 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 11.6%
+  C: 41.6%
+  G: 26.0%
+  T: 19.8%
+  none/other: 0.9%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	6890	4457.0	0	6890
+4	3642	1114.2	0	3642
+5	3119	278.6	0	3119
+6	2925	69.6	0	2925
+7	3150	17.4	0	3150
+8	3475	4.4	0	3475
+9	3561	1.1	0	3539 22
+10	2979	0.3	1	2955 24
+11	2438	0.1	1	2420 18
+12	1833	0.0	1	1814 19
+13	1625	0.0	1	1616 9
+14	1385	0.0	1	1371 14
+15	846	0.0	1	840 6
+16	484	0.0	1	479 5
+17	275	0.0	1	270 5
+18	277	0.0	1	273 4
+19	231	0.0	1	228 3
+20	251	0.0	2	250 1
+21	304	0.0	2	299 5
+22	277	0.0	2	271 5 1
+23	265	0.0	2	263 2
+24	315	0.0	2	313 2
+25	19	0.0	2	19
+26	4	0.0	2	4
+27	4	0.0	2	4
+28	2	0.0	2	2
+29	11	0.0	2	11
+30	1	0.0	3	1
+32	3	0.0	3	2 1
+34	1	0.0	3	1
+36	1	0.0	3	0 1
+38	2	0.0	3	1 1
+42	1	0.0	3	1
+43	3	0.0	3	2 1
+44	1	0.0	3	1
+45	6	0.0	3	5 1
+46	9	0.0	3	9
+48	7	0.0	3	7
+49	33	0.0	3	31 2
+50	312	0.0	3	281 29 2

@@ -1,0 +1,16 @@
+
+
+
+        
+{
+    "filters": [
+        {
+            "id": "1",
+            "mapQuality": ">=30",
+            "isProperPair": "true",
+            "mateReference": "!chrM"
+        }
+    ]
+}
+
+        
